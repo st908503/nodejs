@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="box">
+        <div class="wave -one"></div>
+        <div class="wave -two"></div>
+        <div class="wave -three"></div>
+        <div id="weathercon">
+            <i class="fas fa-sun" style="color: #eccc68;"></i>
+            Pune, In
+        </div>
+        <div class="info">
+            <h2 class="location">
+                <i class="fas fa-street-view"></i>
+            </h2>
+            <p id="date">WED | OCT 23| 10:49AM</p>
+            <h1 class="temp">26.49 C</h1>
+            <h3 class="tempmin_max"> Min 26.49 C | Max 26.49 C</h3>
+        </div>
+    </div>
+    <script>
+        const curData = document.getElementById("date");
+        let weathercon = document.getElementById("weathercon");
+
+        const tempStatus = "Clouds";
+
+        const getCurrentDay = () =>{
+            let currentTime = new Date();
+            console.log(currentTime.getDay())
+        };
+        getCurrentDay();
+    </script>
+</body>
+</html>
+
+
+
+https://api.openweathermap.org/data/2.5/weather?q={city%20name}&appid=eff630b016e42d3f91bdf51cd35f19ba
+
+
+
+
